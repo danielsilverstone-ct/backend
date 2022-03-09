@@ -254,7 +254,7 @@ plugins = ["setuptools"]
 
 [[package]]
 name = "itsdangerous"
-version = "2.1.1"
+version = "2.1.0"
 description = "Safely pass data to untrusted environments and back."
 category = "main"
 optional = false
@@ -706,6 +706,17 @@ anyio = ">=3.0.0,<4"
 full = ["itsdangerous", "jinja2", "python-multipart", "pyyaml", "requests"]
 
 [[package]]
+name = "stripe"
+version = "2.67.0"
+description = "Python bindings for the Stripe API"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[package.dependencies]
+requests = {version = ">=2.20", markers = "python_version >= \"3.0\""}
+
+[[package]]
 name = "toml"
 version = "0.10.2"
 description = "Python Library for Tom's Obvious, Minimal Language"
@@ -774,7 +785,7 @@ yarl = {version = "*", markers = "python_version >= \"3.6\""}
 
 [[package]]
 name = "watchgod"
-version = "0.8"
+version = "0.8.1"
 description = "Simple, modern file watching and code reload in python."
 category = "main"
 optional = false
@@ -806,7 +817,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "4ba03504b174b6b7a428ba09cd0aaef03ddd19ff1bc7028f12d78d5b12d30c46"
+content-hash = "89659e1c4e012a54bcbb0fa4cf8d8e954d986ee02373ead21144709c04b56c6c"
 
 [metadata.files]
 alembic = [
@@ -1015,8 +1026,8 @@ isort = [
     {file = "isort-5.10.1.tar.gz", hash = "sha256:e8443a5e7a020e9d7f97f1d7d9cd17c88bcb3bc7e218bf9cf5095fe550be2951"},
 ]
 itsdangerous = [
-    {file = "itsdangerous-2.1.1-py3-none-any.whl", hash = "sha256:935642cd4b987cdbee7210080004033af76306757ff8b4c0a506a4b6e06f02cf"},
-    {file = "itsdangerous-2.1.1.tar.gz", hash = "sha256:7b7d3023cd35d9cb0c1fd91392f8c95c6fa02c59bf8ad64b8849be3401b95afb"},
+    {file = "itsdangerous-2.1.0-py3-none-any.whl", hash = "sha256:29285842166554469a56d427addc0843914172343784cb909695fdbe90a3e129"},
+    {file = "itsdangerous-2.1.0.tar.gz", hash = "sha256:d848fcb8bc7d507c4546b448574e8a44fc4ea2ba84ebf8d783290d53e81992f5"},
 ]
 lazy-object-proxy = [
     {file = "lazy-object-proxy-1.7.1.tar.gz", hash = "sha256:d609c75b986def706743cdebe5e47553f4a5a1da9c5ff66d76013ef396b5a8a4"},
@@ -1515,6 +1526,10 @@ starlette = [
     {file = "starlette-0.17.1-py3-none-any.whl", hash = "sha256:26a18cbda5e6b651c964c12c88b36d9898481cd428ed6e063f5f29c418f73050"},
     {file = "starlette-0.17.1.tar.gz", hash = "sha256:57eab3cc975a28af62f6faec94d355a410634940f10b30d68d31cb5ec1b44ae8"},
 ]
+stripe = [
+    {file = "stripe-2.67.0-py2.py3-none-any.whl", hash = "sha256:7efaee187a0615ce9361b6009122f89488a874c3175b5262dd9741a49088db18"},
+    {file = "stripe-2.67.0.tar.gz", hash = "sha256:718b93d6a18105243bce0c9b48e518f72f1f083d27f07e07b8bdb3a541fe3835"},
+]
 toml = [
     {file = "toml-0.10.2-py2.py3-none-any.whl", hash = "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b"},
     {file = "toml-0.10.2.tar.gz", hash = "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f"},
@@ -1540,8 +1555,8 @@ vcrpy = [
     {file = "vcrpy-4.1.1.tar.gz", hash = "sha256:57095bf22fc0a2d99ee9674cdafebed0f3ba763018582450706f7d3a74fff599"},
 ]
 watchgod = [
-    {file = "watchgod-0.8-py3-none-any.whl", hash = "sha256:339c2cfede1ccc1e277bbf5e82e42886f3c80801b01f45ab10d9461c4118b5eb"},
-    {file = "watchgod-0.8.tar.gz", hash = "sha256:29a1d8f25e1721ddb73981652ca318c47387ffb12ec4171ddd7b9d01540033b1"},
+    {file = "watchgod-0.8.1-py3-none-any.whl", hash = "sha256:4ba20c2fa3e63df706ab50e694b9453b05395fadb7cbbfd984d71fb1547d485d"},
+    {file = "watchgod-0.8.1.tar.gz", hash = "sha256:c12d15f3df7d11e740704e45398277f75f1d78f46ad59ca9d7505bfd8b8d3086"},
 ]
 wrapt = [
     {file = "wrapt-1.13.3-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:e05e60ff3b2b0342153be4d1b597bbcfd8330890056b9619f4ad6b8d5c96a81a"},
